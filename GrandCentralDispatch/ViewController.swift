@@ -14,6 +14,10 @@ class ViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    performSelector(inBackground: #selector(fetchJSON), with: nil)
+  }
+  
+  func fetchJSON() {
     let urlString: String
     
     if navigationController?.tabBarItem.tag == 0 {
@@ -33,14 +37,14 @@ class ViewController: UITableViewController {
       }
     }
     
-    showError()
+    performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
   }
   
   func showError() {
-    let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again", preferredStyle: .alert)
-    
+   let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again", preferredStyle: .alert)
+      
     ac.addAction(UIAlertAction(title: "OK", style: .default))
-    present(ac, animated: true)
+    self.present(ac, animated: true)
   }
   
   func parse(json: JSON) {
@@ -52,7 +56,7 @@ class ViewController: UITableViewController {
       petitions.append(obj)
     }
     
-    tableView.reloadData()
+    tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

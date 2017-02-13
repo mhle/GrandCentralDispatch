@@ -14,6 +14,8 @@
 		7DBD342A1E512BCE007A1D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DBD34281E512BCE007A1D16 /* LaunchScreen.storyboard */; };
 		7DBD34351E512BCF007A1D16 /* GrandCentralDispatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD34341E512BCF007A1D16 /* GrandCentralDispatchTests.swift */; };
 		7DBD34401E512BCF007A1D16 /* GrandCentralDispatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD343F1E512BCF007A1D16 /* GrandCentralDispatchUITests.swift */; };
+		7DBD344F1E513018007A1D16 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD344D1E513018007A1D16 /* DetailViewController.swift */; };
+		7DBD34501E513018007A1D16 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD344E1E513018007A1D16 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		7DBD343B1E512BCF007A1D16 /* GrandCentralDispatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandCentralDispatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBD343F1E512BCF007A1D16 /* GrandCentralDispatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatchUITests.swift; sourceTree = "<group>"; };
 		7DBD34411E512BCF007A1D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DBD344D1E513018007A1D16 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7DBD344E1E513018007A1D16 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		7DBD341E1E512BCE007A1D16 /* GrandCentralDispatch */ = {
 			isa = PBXGroup;
 			children = (
+				7DBD344D1E513018007A1D16 /* DetailViewController.swift */,
+				7DBD344E1E513018007A1D16 /* SwiftyJSON.swift */,
 				7DBD341F1E512BCE007A1D16 /* AppDelegate.swift */,
 				7DBD34211E512BCE007A1D16 /* ViewController.swift */,
 				7DBD34231E512BCE007A1D16 /* Main.storyboard */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DBD344F1E513018007A1D16 /* DetailViewController.swift in Sources */,
 				7DBD34221E512BCE007A1D16 /* ViewController.swift in Sources */,
 				7DBD34201E512BCE007A1D16 /* AppDelegate.swift in Sources */,
+				7DBD34501E513018007A1D16 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
